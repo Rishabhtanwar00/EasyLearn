@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./images/background1.jpg");
+}
+.container{
+    box-sizing: border-box;
+    text-align: center;
+    height: 580px;
+    width: 410px;
+    background-color: rgb(24, 23, 23);
+    overflow: hidden;
+    padding: 50px;
+    color: white;
+    box-shadow: -10px -10px 10px rgba(0,0,0,0.5),
+                 5px 5px 5px rgba(0,0,0,0.5);
+    border-radius: 30% 200% 30% 200% / 40% 20% 40% 20%;
+    animation: hit 0.3s linear forwards;
+    opacity: 0;
+    animation-delay: 0.6s;
+}
+@keyframes hit{
+    0%{
+        transform: scale(1.5,1.5);
+    } 
+    50%{
+        opacity: 1;
+        transform: scale(1,1);
+    } 
+    75%{
+        opacity: 1;
+        transform: scale(1.1,1.1);
+    } 
+    100%{
+        transform: scale(1,1);
+        opacity: 1;
+    }  
+}
+.container h1{
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    font-size: 2em;
+}
+.container label{
+    margin: 20px;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    padding: 2px 10px;
+    cursor: pointer;
+}
+.container label:hover{
+    border-bottom: 2px rgb(255, 255, 255) solid;
+    transition: 0.5 linear;
+    transition-delay: 0.2s;
+}
+.container .text{
+    height: 30px;
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    font-size: 1.2em;
+    background: transparent;
+    color: white;
+    border: 2px solid rgb(12, 228, 192); 
+    border-radius: 30% 200% 30% 200% / 40% 20% 40% 20%;
+    outline: none; 
+    letter-spacing: 1px;
+}
+.container .text:focus{
+    width: 240px;
+    border: 2px solid rgb(44, 228, 12); 
+    transition: 0.4s all linear;
+    box-shadow: -10px -10px 10px rgba(0,0,0,0.5),
+                 10px 10px 10px rgba(0,0,0,0.5);
+}
+.container .submit{
+    height: 50px;
+    width: 110px;
+    font-size: 1.3em;
+    padding: 10px 20px;
+    margin: 15px;
+    background: rgb(182, 1, 1);
+    color: white;
+    border: 2px solid black;
+    border-radius: 30% 200% 30% 200% / 40% 20% 40% 20%;
+    outline: none;
+    letter-spacing: 1px;
+    box-shadow: black 4px 4px 4px;
+    cursor: pointer;
+}
+.container p{
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
+}
+.container p a{
+    color: rgb(68, 40, 224);
+    text-decoration: none;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 150px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+}
+.content h1{
+    position: relative;
+    font-size: 3.4em;
+    letter-spacing: 2px;
+    color: rgb(255, 251, 251);
+    animation: textslide 2s linear 0.1s forwards;
+    opacity: 0;
+}
+@keyframes textslide{
+    0%{
+        left: -2000px;
+        opacity: 0;
+    }
+    50%{
+        left: 0px;
+        opacity: 1;
+    }
+    60%{
+        left: 0px;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.content img{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    margin-left: 10px;
+    animation: slide 1s linear forwards;
+    opacity: 0;
+}
+@keyframes slide{
+    0%{
+        opacity: 0;
+        left: -2000px;
+    }
+    50%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 1;
+        left: 0px;
+    }
+    70%{
+        opacity: 0;
+        left: 200px;
+    }
+    99%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        left: 0px;
+    }
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgba(255, 1, 1, 1),rgb(29, 102, 219));
+    border-radius:6px;
+}
+::-webkit-scrollbar-track{
+    background: linear-gradient(rgb(29, 102, 219),rgba(255, 1, 1, 1));
+}
+@media screen and (max-width:920px){
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+    body:hover{
+        overflow-y: scroll;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0;
+    }
+    .content h1{
+        margin-top: 20px;
+        animation: textslide 2s linear 1s forwards;
+        opacity: 0;
+    }
+    @keyframes textslide{
+        0%{
+            top: -2000px;
+            opacity: 0;
+        }
+        50%{
+            top: 0px;
+            opacity: 1;
+        }
+        60%{
+            top: 0px;
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .content img{
+        margin: 50px;
+        transform: rotate(90deg);
+        animation: slide 2s linear forwards;
+        opacity: 0;
+    }
+    @keyframes slide{
+        0%{
+            opacity: 0;
+            top: -2000px;
+        }
+        50%{
+            opacity: 0;
+        }
+        60%{
+            opacity: 1;
+            top: 0px;
+        }
+        70%{
+            opacity: 0;
+            top: 200px;
+        }
+        99%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+            top: 0px;
+        }
+    }
+    .container{
+        margin-bottom: 20px;
+    }
+}
+#pass{
+    position: relative;
+    left: 15px;
+
+}
+.eye-btn{
+    position: relative;
+    background: transparent;
+    left:-35px;
+    cursor: pointer;
+}

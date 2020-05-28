@@ -1,0 +1,188 @@
+<html>
+    <head>
+        <title>
+            E-learning Website!
+        </title>
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+       <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+      </head>
+    <body>
+        <header id="head">
+          <nav>
+              <div class="icon">
+                <a href="website.html"><img src="https://www.freelogoservices.com/api/main/images/1j+ojVNGOMkX9W2+J1iwiG2phvGIqhFInQiIiWcqL2VE9ApklyckhPFj8A==" alt=""></a>
+              </div>
+              <div class="hamburger">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>                  
+              </div>
+               <ul class="links">
+                  <li><a href="#courses">Courses</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="signin.html">Sign In</a></li>
+                  <li><a href="register.html">Register</a></li>
+                  <li class="cart"><a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>Cart <span>0</span>
+                  </a></li>
+               </ul>
+          </nav>
+        </header>
+        <div class="slideshow">
+            <div class="myslides">
+                <img class="slide" src="./images/image1.jpg" alt="">
+                <div class="content">
+                  <h1>Good quality and certified learning</h1>
+                  <p>
+                    We will provide you the best and the easiet 
+                    way of learning concepts, logics and other 
+                    fundamentals with verified certificate
+                  </p>
+                </div>
+            </div>
+            <div class="myslides">
+                <img class="slide" src="./images/image2.jpg" alt="">
+                <div class="content">
+                  <h1>A Great Learning Environment</h1>
+                  <p>
+                    You can discuss problems with our mentors 
+                    and with other students to solve them
+                  </p>
+                </div>
+            </div>
+            <div class="myslides">
+                <img class="slide" src="./images/image4.jpg" alt="">
+                <div class="content">
+                  <h1 class="one">Very Less Expensive learning</h1>
+                  <p>
+                    The most important is that we will provide
+                    all courses on a very low and affordable cost
+                  </p>
+                </div>
+            </div>
+            <button class="left sidebutton" onclick="plusslide(-1)"><i class="fas fa-chevron-left"></i></button>
+            <button class="right sidebutton" onclick="plusslide(+1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="searchbox">
+          <input class="search" type="search" name="" placeholder="search courses here..." id="">
+          <div class="searchbutton"><i class="fa fa-search fa-2x" aria-hidden="true"></i></div>
+        </div>
+        <div class="course-container" id="courses">
+          <h1>Courses</h1><br>
+          <div class="cards">
+              <div class="card">
+                  <a href="#"><img class="cardimage" src="./images/python.png" alt=""></a>
+                  <p class="title">Python from Scratch to advanced with projects</p>
+                  <div class="overlay">
+                    <div class="buttons">
+                      <button class="button1">Price:4$</button>
+                      <button class="add-cart cart1">Add to Cart</button>
+                      <p>Rating: 4.5/5(12321 users)</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="card">
+                <a href="#"><img class="cardimage" src="./images/react.png" alt=""></a>
+                <p class="title">React Developer using hooks,Redux</p>
+                <div class="overlay">
+                  <div class="buttons">
+                    <button class="button1">Price:5$</button>
+                    <button class="add-cart cart2">Add to Cart</button>
+                    <p>Rating: 4.2/5(10454 users)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <a href="#"><img class="cardimage" src="./images/frontendweb.png" alt=""></a>
+                <p class="title">Front End web developement using HTML,CSS and JS</p>
+                <div class="overlay">
+                  <div class="buttons">
+                    <button class="button1">Price:7$</button>
+                    <button class="add-cart cart3">Add to Cart</button>
+                    <p>Rating: 4.8/5(13754 users)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <a href="#"><img class="cardimage" src="./images/fullstackweb.png" alt=""></a>
+                <p class="title">Full Stack web developement using python + django</p>
+                <div class="overlay">
+                  <div class="buttons">
+                    <button class="button1">Price:7$</button>
+                    <button class="add-cart cart4">Add to Cart</button>
+                    <p>Rating: 4.6/5(9351 users)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <a href="#"><img class="cardimage" src="./images/java.png" alt=""></a>
+                <p class="title">Core and Advanced Java from beginning to mastery</p>
+                <div class="overlay">
+                  <div class="buttons">
+                    <button class="button1">Price:4$</button>
+                    <button class="add-cart cart5">Add to Cart</button>
+                    <p>Rating: 4.5/5(10721 users)</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="about" id="about">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,288L21.8,293.3C43.6,299,87,309,131,266.7C174.5,224,218,128,262,96C305.5,64,349,96,393,133.3C436.4,171,480,213,524,229.3C567.3,245,611,235,655,208C698.2,181,742,139,785,149.3C829.1,160,873,224,916,245.3C960,267,1004,245,1047,250.7C1090.9,256,1135,288,1178,298.7C1221.8,309,1265,299,1309,256C1352.7,213,1396,139,1418,101.3L1440,64L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"></path></svg> -->
+          <div class="abouthead">
+            <h1>About</h1>
+            <img src="./images/aboutimage.png" alt="">
+          </div>
+          <div class="aboutcontent">
+            <p>
+               We are a new startup and we want to educate people
+               and to provide them essential content to learn new 
+               technologies at a low and an affordable cost.        
+            </p>
+            <p>
+               We are verified by respected organization and we will
+               ceritify all of our students with their respective course
+               verified Certificate.
+            </p>
+            <button>About Developer</button>
+          </div>
+        </div>
+        <div class="contact" id="contact">
+            <h1>Contact</h1>
+          <div class="contactgrid">
+            <div class="forquery">
+             <p><i class="far fa-envelope"></i>learneasy@gmail.com</p>
+             <p><i class="fas fa-mobile-alt"></i>+918648036759</p>
+             <p><i class="fas fa-globe"></i>learneasy.info</p>
+            </div>
+            <div class="tree">
+              <img src="./images/socialtree.png" alt="">
+            </div>
+            <div class="social">
+               <p>Follow us on Social Media:</p>
+               <div class="socialimages">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer>
+             <p>
+                Our aim is to provide better education about technologies 
+                to everyone who wants to learn and who wants to grind their
+                technical skills
+             </p> 
+             <h3>
+                ©All Rights are Reserved
+             </h3>
+        </footer>
+        <script type="text/javascript" src="index.js"></script>
+        <script type="text/javascript" src="cart.js"></script>
+        <script src="https://kit.fontawesome.com/9e28372f8f.js" crossorigin="anonymous"></script>
+    </body>
+</html>
