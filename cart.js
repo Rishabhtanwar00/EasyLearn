@@ -109,7 +109,7 @@ function displayCart(){
             productcontainer.innerHTML += `
             <div class="product">
                <div class="producttitle">
-                  <img src="C:\\Users\\Administrator\\Desktop\\website_project\\images\\${item.tag}.png">
+                  <img src=".\\images\\${item.tag}.png">
                   <span>${item.name} Developer</span>
                </div>
                <div >$${item.price}.00</div>
@@ -139,7 +139,7 @@ function displayCart(){
    else{
     productcontainer.innerHTML = `
     <div class="emptycart">
-       <img src="emptycart.png">
+       <img src="./images/emptycart.png">
        <h2>No Item</h2>
     </div>
     `;
