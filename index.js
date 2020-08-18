@@ -45,7 +45,7 @@ for (let i = 0; i < card.length; i++) {
     cardimage[i].style.transition = '0.3s linear';
     cardimage[i].classList.add('roundicon');
     card[i].style.background =
-      'linear-gradient(#5851DB,#833AB4, #C13584,#E1306C,#FD1D1D,#F56040, #F77737,#FCAF45, #FFDC80)';
+      'black';
   });
   card[i].addEventListener('mouseout', () => {
     card[i].style.transition = '0.3s linear';
